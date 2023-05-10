@@ -1,25 +1,7 @@
-package real;
+package abs;
 
-import abs.Calculator;
-
-public class KnuCalc extends Calculator {
-
-   @Override
-   public int add(int a, int b) {
-      return a + b;
-   }
-
-   @Override
-   public int subtract(int a, int b) {
-      // TODO Auto-generated method stub
-      return a - b;
-   }
-
-   @Override
-   public double average(int[] a) {
-      double sum = 0;
-      for(int element : a) sum += element;
-      return sum / a.length;
-   }
-
+public abstract class Calculator {
+	public abstract int add(int a, int b);
+	public abstract int subtract(int a, int b);
+	public abstract double average(int a[]);
 }
