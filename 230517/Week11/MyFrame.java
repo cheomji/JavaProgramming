@@ -47,6 +47,7 @@ public class MyFrame extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == itemNew) {
 				p.lines.clear();
+				p.ovals.clear();
 				repaint();
 			}
 			else if (e.getSource() == buttonLine) {
