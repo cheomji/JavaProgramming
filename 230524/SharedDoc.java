@@ -5,7 +5,7 @@ public class SharedDoc {
 	public SharedDoc() {
 		this.text = "";
 	}
-	
+	// 굳이 이렇게 할 필요 없이 이중포문 돌리면 됏음.. 12주차 수업자료 46페이지에 그대로 나와 잇음ㅇㅇ
 	synchronized public void addText(String text, int number) {
 		int myTextLen = this.text.length() - (this.text.length()/50);
 		// except "\n"
