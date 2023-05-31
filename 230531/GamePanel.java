@@ -41,7 +41,7 @@ public class GamePanel extends JPanel {
 		@Override
 		public void run() {
 			while (true) {
-				if (done == false) {
+				if (done == false && isClear == false) {
 					player.move();
 					repaint();
 				}
